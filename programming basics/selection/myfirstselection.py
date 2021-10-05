@@ -4,4 +4,6 @@ if num1 % 2 == 1:
     temp = num1
     num1 = num2
     num2 = temp
+else:
+#end if
 print(num1, num2)
