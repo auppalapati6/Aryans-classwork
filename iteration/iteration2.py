@@ -1,8 +1,9 @@
 pasword = "tues1212"
+"enter your password"
 
 counter = 0
 while counter<3:
-    attempt=input()
+    attempt=str(input())
     if attempt == pasword:
        print("password accepted")
     elif attempt !=pasword:
