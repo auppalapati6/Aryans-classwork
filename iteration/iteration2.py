@@ -8,3 +8,4 @@ while counter<3:
     elif attempt !=pasword:
         print("password rejected")
         counter = counter+1
+#endwhile
