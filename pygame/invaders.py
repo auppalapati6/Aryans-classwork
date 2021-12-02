@@ -78,12 +78,12 @@ pygame.display.set_caption("My Game")
  
 # Loop until the user clicks the close button.
 done = False
-snow_group = pygame.sprite.Group()
+invaders_group = pygame.sprite.Group()
 all_sprites_groups = pygame.sprite.Group()
 for n in range(50):
-  snow_drop = invaders(WHITE,10,10)
-  snow_group.add(snow_drop)
-  all_sprites_groups.add(snow_drop)
+  INVADER_PERSON = invaders(BLUE,10,10)
+  invaders_group.add(INVADER_PERSON)
+  all_sprites_groups.add(INVADER_PERSON)
 #next n
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
