@@ -35,15 +35,11 @@ class player(pygame.sprite.Sprite):
     self.image.fill(color) 
     # Set the position of the sprite 
     self.rect = self.image.get_rect() 
-    self.rect.x = random.randrange(0, 600) 
-    self.rect.y = 0-random.randrange(0, 50) 
+    self.rect.x = (0, 200) 
+    self.rect.y = (0, 100) 
   #End Procedure
   def update(self):
-    if self.rect.y > 500:
-      self.rect.x = random.randint(0,700)
-      self.rect.y = 0
-    else:
-      self.rect.y = self.rect.y + 1
+    pass
 #End Class
 
 
@@ -79,11 +75,16 @@ pygame.display.set_caption("My Game")
 # Loop until the user clicks the close button.
 done = False
 invaders_group = pygame.sprite.Group()
+player_group = pygame.sprite.Group()
 all_sprites_groups = pygame.sprite.Group()
-for n in range(50):
-  INVADER_PERSON = invaders(BLUE,10,10)
+for n in range(12):
+  INVADER_PERSON = invaders(GREEN,10,10)
   invaders_group.add(INVADER_PERSON)
   all_sprites_groups.add(INVADER_PERSON)
+for n in range(1):
+  player = invaders(RED,10,10)
+  player_group.add(player)
+  all_sprites_groups.add(player)
 #next n
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
