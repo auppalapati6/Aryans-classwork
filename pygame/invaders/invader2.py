@@ -3,7 +3,6 @@ import pygame
 
 #big class for stuff
 class x:
-    screen = None
     invaders = []
     bullets = []
     lost = False
@@ -19,7 +18,6 @@ class x:
         player = Player(self, width/2, height-20)
         alienmaker = ALIENMAKER(self)
         bullet = None
-        #key stuff
         while not done:
             pressed = pygame.key.get_pressed()
             if pressed[pygame.K_LEFT]:  
