@@ -1,3 +1,7 @@
+### SRC - This is just the code I pasted in Teams
+### Can you please show me the code to complete the OOP
+### Worksheet.
+
 class Dog():
   #name as string
   #colour as string
